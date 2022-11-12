@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width: 250px;
+            margin: 50px auto 0;
+        }
+        table,.a{
+            width: 380px;
+            margin: 50px auto 0;
+            border-collapse: collapse;
+        }
+        form{
+            width: 450px;
+            margin:50px auto 0;
+        }
+        td{
+            border: 2px solid burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>購物車清單</h1>
+    <form method = "post" action="del_Cart.py">
+        輸入要刪除的貨物編號:
+        <input type='text' name='id'> <input type='submit'>
+    </form>
+    <table>
+            ###cart_msg###
+    </table>
+    <div class="a"><a href='List_Goods.py'>回庫存清單</a></div>
+    <div class="a"><a href='purchase.py'>結帳</a></div>
+</body>
+</html>
